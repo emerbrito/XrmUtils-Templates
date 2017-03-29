@@ -1,0 +1,1 @@
+This folder contains actual projects used as references when creating the templates

@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VSTemplate Version="3.0.0" Type="Item" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" xmlns:sdk="http://schemas.microsoft.com/developer/vstemplate-sdkextension/2010">
+  <TemplateData>
+    <Name>Dynamics CRM Workflow Activity</Name>
+    <Description>A CRM custom workflow activity definition.</Description>
+    <Icon>TemplateItem.CrmWorkflow.ico</Icon>
+    <TemplateID>2e5abb1f-682c-46b9-9af9-585f32fcfa56</TemplateID>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType>Windows</ProjectSubType>
+    <RequiredFrameworkVersion>4.5.2</RequiredFrameworkVersion>
+    <NumberOfParentCategoriesToRollUp>1</NumberOfParentCategoriesToRollUp>
+    <DefaultName>CustomActivity.cs</DefaultName>
+  </TemplateData>
+  <TemplateContent>
+    <References>
+      <Reference>
+        <Assembly>System</Assembly>
+      </Reference>
+    </References>
+    <ProjectItem ReplaceParameters="true">CustomActivity.cs</ProjectItem>
+  </TemplateContent>
+</VSTemplate>

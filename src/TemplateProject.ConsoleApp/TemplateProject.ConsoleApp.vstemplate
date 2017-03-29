@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VSTemplate Version="3.0.0" Type="Project" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" xmlns:sdk="http://schemas.microsoft.com/developer/vstemplate-sdkextension/2010">
+  <TemplateData>
+    <Name>Dynamics CRM Console App</Name>
+    <Description>A project for creating a command-line application that connects to Dynamics CRM. Implements the common login control from XRM tooling.</Description>
+    <Icon>TemplateProject.ConsoleApp.ico</Icon>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType></ProjectSubType>
+    <RequiredFrameworkVersion>4.5.2</RequiredFrameworkVersion>
+    <SortOrder>1000</SortOrder>
+    <TemplateID>d1e8c27d-de36-4ad6-8c5b-47a30abd1ebd</TemplateID>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>CrmConsoleApp</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <PromptForSaveOnCreation>true</PromptForSaveOnCreation>
+  </TemplateData>
+  <TemplateContent>
+    <Project File="ProjectTemplate.csproj" ReplaceParameters="true">
+      <ProjectItem ReplaceParameters="true" TargetFileName="Properties\AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" OpenInEditor="true">EntryPoint.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" OpenInEditor="false">CommandArguments.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" OpenInEditor="false">Log.config</ProjectItem>
+      <ProjectItem ReplaceParameters="true" OpenInEditor="false">packages.config</ProjectItem>
+      <ProjectItem ReplaceParameters="true" OpenInEditor="false">Program.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" OpenInEditor="false">App.config</ProjectItem>
+      <ProjectItem ReplaceParameters="true" OpenInEditor="false">LoginWindow\CrmLogin.xaml</ProjectItem>
+      <ProjectItem ReplaceParameters="true" OpenInEditor="false">LoginWindow\CrmLogin.xaml.cs</ProjectItem>
+    </Project>
+  </TemplateContent>
+</VSTemplate>

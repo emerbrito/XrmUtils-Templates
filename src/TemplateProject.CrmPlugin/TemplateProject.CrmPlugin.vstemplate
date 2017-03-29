@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VSTemplate Version="3.0.0" Type="Project" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" xmlns:sdk="http://schemas.microsoft.com/developer/vstemplate-sdkextension/2010">
+  <TemplateData>
+    <Name>Dynamics CRM Server Extensions</Name>    
+    <Description>A project for creating Dynamics CRM plugins and custom workflow activities. Implements the XrmUtils extensions.</Description>
+    <Icon>TemplateProject.CrmPlugin.ico</Icon>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType></ProjectSubType>
+    <RequiredFrameworkVersion>4.5.2</RequiredFrameworkVersion>
+    <SortOrder>1000</SortOrder>
+    <TemplateID>fc868e68-423d-4eb4-b809-629dc13068be</TemplateID>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>CRMPluginProject</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <PromptForSaveOnCreation>true</PromptForSaveOnCreation>
+  </TemplateData>
+  <TemplateContent>
+    <Project File="ProjectTemplate.csproj" ReplaceParameters="true">
+      <ProjectItem ReplaceParameters="true" TargetFileName="Properties\AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" OpenInEditor="true">CustomPlugin.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" OpenInEditor="false">ILMergeConfig.json</ProjectItem>
+    </Project>
+  </TemplateContent>
+  <WizardExtension>
+    <Assembly>NuGet.VisualStudio.Interop, Version=1.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</Assembly>
+    <FullClassName>NuGet.VisualStudio.TemplateWizard</FullClassName>
+  </WizardExtension>
+  <WizardData>
+    <packages repository="extension" repositoryId="XrmUtils.Dynamics365.VsExtension.Emerson Brito.7a41617e-19c8-4a76-a95a-734bd2023e6e">
+      <package id="ilmerge" version="2.14.1208" />
+      <package id="ilmerge.msbuild.task" version="1.0.2" />
+      <package id="microsoft.identitymodel" version="6.1.7600.16394" />
+      <package id="microsoft.crmsdk.coreassemblies" version="8.2.0.2" />
+      <package id="microsoft.crmsdk.workflow" version="8.2.0.2" />
+      <package id="xrmutils.crmsdk.extensions" version="1.0.1" />
+      <package id="xrmutils.crmsdk.pluginextensions" version="1.0.1.2" />
+    </packages>
+  </WizardData>
+</VSTemplate>

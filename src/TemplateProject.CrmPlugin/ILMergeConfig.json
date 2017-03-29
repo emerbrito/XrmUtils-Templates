@@ -1,0 +1,8 @@
+﻿{
+  "General": {
+    "InputAssemblies": [
+      "XrmUtils.Extensions.dll",
+      "XrmUtils.Plugins.Extensions.dll"
+    ]
+  }
+}

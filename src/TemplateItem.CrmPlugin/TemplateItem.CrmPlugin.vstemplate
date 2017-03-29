@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VSTemplate Version="3.0.0" Type="Item" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" xmlns:sdk="http://schemas.microsoft.com/developer/vstemplate-sdkextension/2010">
+  <TemplateData>
+    <Name>Dynamics CRM Plugin</Name>
+    <Description>A CRM plugin definition.</Description>
+    <Icon>TemplateItem.CrmPlugin.ico</Icon>
+    <TemplateID>093688bc-cc57-4307-a602-281d0b152201</TemplateID>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType>Windows</ProjectSubType>
+    <RequiredFrameworkVersion>4.5.2</RequiredFrameworkVersion>
+    <NumberOfParentCategoriesToRollUp>1</NumberOfParentCategoriesToRollUp>
+    <DefaultName>CustomPlugin.cs</DefaultName>
+  </TemplateData>
+  <TemplateContent>
+    <References>
+      <Reference>
+        <Assembly>System</Assembly>
+      </Reference>
+    </References>
+    <ProjectItem ReplaceParameters="true">CustomPlugin.cs</ProjectItem>
+  </TemplateContent>
+</VSTemplate>
